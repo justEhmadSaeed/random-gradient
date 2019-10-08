@@ -5,7 +5,10 @@ body {
     text-transform: uppercase;
     letter-spacing: .5em;
     top: 15%;
-	background: linear-gradient(to right, #00ff00 , #ff0000); /* Standard syntax */
+    background: linear-gradient(to right, #00ff00 , #ff0000); /* Standard syntax */
+    /*Added Transition to bg color*/
+    transition:  1s ;
+
 }
 
 h1 {
@@ -24,4 +27,8 @@ h3 {
     text-transform: none;
     letter-spacing: 0.01em;
 
+}
+
+div{
+    margin-top: 10px;
 }
