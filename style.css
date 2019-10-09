@@ -6,8 +6,6 @@ body {
     letter-spacing: .5em;
     top: 15%;
     background: linear-gradient(to right, #00ff00 , #ff0000); /* Standard syntax */
-    /*Added Transition to bg color*/
-    transition:  1s ;
 
 }
 
