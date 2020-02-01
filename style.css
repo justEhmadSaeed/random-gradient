@@ -45,6 +45,7 @@ div {
 	color: white;
 	border: 2px solid #e7e7e7;
 	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
 }
 .button1:active {
 	background-color: #3e8e41;
