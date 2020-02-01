@@ -1,32 +1,29 @@
-var h3 = document.querySelector("h3");
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var body = document.querySelector("#gradient");
-var random = document.querySelector("button");
+const h3 = document.querySelector('h3');
+const color1 = document.querySelector('.color1');
+const color2 = document.querySelector('.color2');
+const body = document.querySelector('#gradient');
+const random = document.querySelector('button');
 
-function setGradient() {
-	body.style.background = "linear-gradient(to right,"
-		+ color1.value + ", " + color2.value + ")";
+setGradient = () => {
+	body.style.background = 'linear-gradient(to right,' + color1.value + ', ' + color2.value + ' )';
 	h3.textContent = body.style.background;
+};
 
-}
-color1.addEventListener("input", setGradient);
+color1.addEventListener('input', setGradient);
 
-color2.addEventListener("input", setGradient);
+color2.addEventListener('input', setGradient);
 
 ////Roshaan made these Changess
-function randomColor() {
-	var letters = '0123456789ABCDEF';
-	var color = '#';
-	for (var i = 0; i < 6; i++) {
-	  color += letters[Math.floor(Math.random() * 16)];
+randomColor = () => {
+	let letters = '0123456789ABCDEF';
+	let color = '#';
+	for (let i = 0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)];
 	}
 	return color;
-  }
+};
 
-
-
-random.addEventListener("click", function(){
+random.addEventListener('click', () => {
 	color1.value = randomColor();
 	color2.value = randomColor();
 	setGradient();
