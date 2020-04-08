@@ -48,10 +48,11 @@ div {
 	cursor: pointer;
 }
 .button1:active {
-	background-color: #3e8e41;
+	background-color: #1b491d;
 	box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3), 0 19px 55px 0 rgba(0, 0, 0, 0.21);
 	transform: translateY(4px);
+	outline: none;
 }
 .button1:focus{
-	outline: none;
+	outline: thin dotted;
 }
