@@ -52,3 +52,6 @@ div {
 	box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3), 0 19px 55px 0 rgba(0, 0, 0, 0.21);
 	transform: translateY(4px);
 }
+.button1:focus{
+	outline: none;
+}
