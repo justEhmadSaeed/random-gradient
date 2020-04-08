@@ -54,5 +54,5 @@ div {
 	outline: none;
 }
 .button1:focus{
-	outline: thin dotted;
+	outline: none;
 }
