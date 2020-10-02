@@ -1,58 +1,59 @@
 body {
-	font: 'Raleway', sans-serif;
-	color: rgba(0, 0, 0, 0.5);
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	top: 15%;
-	background: linear-gradient(to right, #00ff00, #ff0000); /* Standard syntax */
+  font: 'Raleway', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  top: 15%;
+  background: linear-gradient(to right, #1488cc, #2b32b2); /* Standard syntax */
 }
 
 h1 {
-	font: 600 3.5em 'Raleway', sans-serif;
-	color: rgba(0, 0, 0, 0.5);
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	width: 100%;
+  font: 600 3.5em 'Raleway', sans-serif;
+  color:white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  width: 100%;
 }
 
 h3 {
-	font: 900 1em 'Raleway', sans-serif;
-	color: rgba(0, 0, 0, 0.5);
-	text-align: center;
-	text-transform: none;
-	letter-spacing: 0.01em;
+  font: 900 1em 'Raleway', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
 
 div {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 .button1 {
-	background-color: #e7e7e7;
-	color: black;
-	border: 2px solid #4caf50;
-	border-radius: 8px;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 14px;
-	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(to right, #1488cc, #2b32b2); /* Standard syntax */
+  color: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .button1:hover {
-	background-color: #4caf50; /* Green */
-	color: white;
-	border: 2px solid #e7e7e7;
-	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-	cursor: pointer;
+  color: white;
+  border: 2px solid #e7e7e7;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 .button1:active {
-	background-color: #1b491d;
-	box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3), 0 19px 55px 0 rgba(0, 0, 0, 0.21);
-	transform: translateY(4px);
-	outline: none;
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
+    0 19px 55px 0 rgba(0, 0, 0, 0.21);
+  transform: translateY(4px);
+  outline: none;
 }
-.button1:focus{
-	outline: none;
+.button1:focus {
+  outline: none;
 }

@@ -6,6 +6,7 @@ const random = document.querySelector('button');
 
 setGradient = () => {
 	body.style.background = _linearGradient();
+	random.style.background = _linearGradient();
 	h3.textContent = `${body.style.background}`;
 };
 _linearGradient = () => {
