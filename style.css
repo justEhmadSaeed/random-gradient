@@ -1,24 +1,28 @@
 body {
-  font: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   top: 15%;
+  margin: 2% 7%;
   background: linear-gradient(to right, #1488cc, #2b32b2); /* Standard syntax */
 }
 
 h1 {
-  font: 600 3.5em 'Raleway', sans-serif;
-  color:white;
+  font: 600 3.5em "Raleway", sans-serif;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  width: 100%;
+}
+
+.heading {
+  font-size: xx-large;
 }
 
 h3 {
-  font: 900 1em 'Raleway', sans-serif;
+  font: 900 1em "Raleway", sans-serif;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   text-transform: none;
@@ -29,6 +33,7 @@ div {
   margin-top: 10px;
 }
 .button1 {
+  font-size: xx-large;
   background: linear-gradient(to right, #1488cc, #2b32b2); /* Standard syntax */
   color: black;
   border: 2px solid white;
@@ -37,7 +42,7 @@ div {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 20px;
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -56,4 +61,38 @@ div {
 }
 .button1:focus {
   outline: none;
+}
+
+#gradient-box {
+  justify-content: center;
+  align-items: center;
+  padding: 1.5%;
+  margin: 2% 20%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24);
+}
+
+#gradient-value {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+#copy {
+  float: right;
+  display: inline;
+  width: 17px;
+}
+
+.color1 {
+  width: 100px;
+  height: 100px;
+}
+
+.color2 {
+  width: 100px;
+  height: 100px;
 }
