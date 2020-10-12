@@ -23,8 +23,13 @@ color2.addEventListener("input", setGradient);
 copyGradient = () => {
   let element = document.getElementById("gradient-value");
   let elementText = element.textContent;
-  navigator.clipboard.writeText(elementText);
-  alert("Gradient CSS copied ! 🙌");
+  /* Select the text field */
+  elementText.select();
+  elementText.setSelectionRange(0, 99999); /*For mobile devices*/
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+  //navigator.clipboard.writeText(elementText);
+  alert("Gradient CSS copied !");
 };
 
 ////Roshaan made these Changess
