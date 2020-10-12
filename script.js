@@ -42,11 +42,3 @@ random.addEventListener("click", () => {
   color2.value = randomColor();
   setGradient();
 });
-
-// Function to copy the generated gradient to clipboard
-copyGradient = () => {
-  let element = document.getElementById("gradient-value");
-  let elementText = element.textContent;
-  navigator.clipboard.writeText(elementText);
-  alert("Gradient CSS copied ! 🙌");
-};
