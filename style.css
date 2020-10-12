@@ -85,6 +85,7 @@ div {
   float: right;
   display: inline;
   width: 17px;
+  outline: none;
 }
 
 .color1 {
