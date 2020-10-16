@@ -64,7 +64,9 @@ div {
 }
 
 #gradient-box {
-  justify-content: center;
+  min-height: 1rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 1.5%;
   margin: 2% 20%;
