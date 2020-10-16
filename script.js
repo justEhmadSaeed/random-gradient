@@ -51,11 +51,14 @@ random.addEventListener("click", () => {
 });
 
 // Function to copy the generated gradient to clipboard
-copyGradient = () => {
+copyGradient = async () => {
 	let element = document.getElementById("gradient-value");
 	let elementText = element.textContent;
-	navigator.clipboard.writeText(elementText).then(
-		() => alert("Gradient CSS copied ! 🙌"),
-		() => alert("Gradient CSS Copy Error ! ☹")
-	);
+	try {
+    await navigator.clipboard.writeText(elementText);
+    console.log('Gradient copied to clipboard.');
+    alert("Gradient CSS copied !🙌")
+	} catch (err) {
+		console.error("Failed to Copy: ", err);
+	}
 };
