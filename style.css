@@ -79,6 +79,7 @@ div {
   display: inline;
   justify-content: center;
   align-items: center;
+  margin: auto;
   font-size: large;
   font-weight: bold;
   color: black;
