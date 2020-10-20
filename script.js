@@ -22,17 +22,18 @@ color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 
 // Function to copy the generated gradient to clipboard
-copyGradient = () => {
-	let element = document.getElementById("gradient-value");
-	let elementText = element.textContent;
-	/* Select the text field */
-	elementText.select();
-	elementText.setSelectionRange(0, 99999); /*For mobile devices*/
-	/* Copy the text inside the text field */
-	document.execCommand("copy");
-	//navigator.clipboard.writeText(elementText);
-	alert("Gradient CSS copied !");
-};
+// copyGradient2 = () => {
+// 	let element = document.getElementById("gradient-value");
+// 	let elementText = element.textContent;
+// 	/* Select the text field */
+// 	elementText.select();
+// 	elementText.setSelectionRange(0, 99999); /*For mobile devices*/
+// 	/* Copy the text inside the text field */
+// 	document.execCommand("copy");
+// 	//navigator.clipboard.writeText(elementText);
+// 	alert("Gradient CSS copied !");
+// };
+
 
 ////Roshaan made these Changess
 randomColor = () => {
@@ -51,14 +52,28 @@ random.addEventListener("click", () => {
 });
 
 // Function to copy the generated gradient to clipboard
-copyGradient = async () => {
-	let element = document.getElementById("gradient-value");
-	let elementText = element.textContent;
-	try {
-    await navigator.clipboard.writeText(elementText);
-    console.log('Gradient copied to clipboard.');
-    alert("Gradient CSS copied !🙌")
-	} catch (err) {
-		console.error("Failed to Copy: ", err);
-	}
-};
+// copyGradient = async () => {
+// 	let element = document.getElementById("gradient-value");
+// 	let elementText = element.textContent;
+// 	try {
+//     await navigator.clipboard.writeText(elementText);
+//     console.log('Gradient copied to clipboard.');
+//     alert("Gradient CSS copied !🙌")
+// 	} catch (err) {
+// 		console.error("Failed to Copy: ", err);
+// 	}
+
+// };
+
+
+// Trial Function 
+const copyToClipboard = () => {
+	const el = document.createElement('textarea');
+	el.value = document.getElementById("gradient-value").innerText;
+	document.body.appendChild(el);
+	el.select();
+	document.execCommand('copy');
+	document.body.removeChild(el);
+	console.log("Gradient copied")
+	alert ("Gradient CSS copied !🙌")
+  };
