@@ -1,126 +1,133 @@
 body {
-  font-family: "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  top: 15%;
-  margin: 2% 7%;
-  background: linear-gradient(to right, #1488cc, #2b32b2); /* Standard syntax */
+	font-family: 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100vh;
+	margin: 0;
+	background: linear-gradient(to right, #1488cc, #2b32b2);
 }
-
+#line {
+	width: 100%;
+}
 h1 {
-  font: 600 3.5em "Raleway", sans-serif;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
+	font: 600 3.5em 'Raleway', sans-serif;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding-top: 2rem;
 }
-
 .heading {
-  font-size: xx-large;
+	font-size: xx-large;
 }
-
 h3 {
-  font: 900 1em "Raleway", sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  text-transform: none;
-  letter-spacing: 0.01em;
+	font: 900 1em 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-transform: none;
+	letter-spacing: 0.01em;
 }
-
-div {
-  margin-top: 10px;
+.generate-btn {
+	background: linear-gradient(to right, #1488cc, #2b32b2);
+	color: black;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 2rem 4rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3rem;
+	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.button1 {
-  font-size: xx-large;
-  background: linear-gradient(to right, #1488cc, #2b32b2); /* Standard syntax */
-  color: black;
-  border: 2px solid white;
-  border-radius: 8px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+.generate-btn:hover {
+	color: white;
+	border: 2px solid #e7e7e7;
+	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
 }
-.button1:hover {
-  color: white;
-  border: 2px solid #e7e7e7;
-  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
+.generate-btn:active {
+	box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
+		0 19px 55px 0 rgba(0, 0, 0, 0.21);
+	transform: translateY(4px);
+	outline: none;
 }
-.button1:active {
-  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
-    0 19px 55px 0 rgba(0, 0, 0, 0.21);
-  transform: translateY(4px);
-  outline: none;
+.generate-btn:focus {
+	outline: none;
 }
-.button1:focus {
-  outline: none;
-}
-
 #gradient-box {
-  min-height: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5%;
-  margin: 2% 20%;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24);
+	min-height: 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	margin: 2%;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24);
 }
-
 #gradient-value {
-  display: inline;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  font-size: large;
-  font-weight: bold;
-  color: black;
+	display: inline;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	font-size: xx-large;
+	font-weight: bold;
+	color: black;
 }
 #copy {
-  float: right;
-  display: inline;
-  width: 17px;
-  outline: none;
-  padding: 10px;
-  border: none;
+	display: inline;
+	width: 40px;
+	outline: none;
+	padding: 10px;
+	border: none;
+	font-size: xx-large;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	display: inline-block;
+	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#copy:hover {
+	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	cursor: pointer;
+}
+#copy:active {
+	box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
+		0 19px 55px 0 rgba(0, 0, 0, 0.21);
+	transform: translateY(2px);
+	outline: none;
+}
+#copy:focus {
+	outline: none;
+}
+.color {
+	width: 30%;
+	height: 200px;
 }
 
-.button2 {
-  font-size: xx-large;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 8px;
-  display: inline-block;
-  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.button2:hover {
-  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-}
-.button2:active {
-  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
-    0 19px 55px 0 rgba(0, 0, 0, 0.21);
-  transform: translateY(2px);
-  outline: none;
-}
-.button2:focus {
-  outline: none;
-}
-.color1 {
-  width: 100px;
-  height: 100px;
-}
-
-.color2 {
-  width: 100px;
-  height: 100px;
+@media only screen and (min-width: 1024px) {
+	body {
+		align-items: center;
+	}
+	.generate-btn {
+		font-size: 2rem;
+	}
+	#gradient-box {
+		width: 70%;
+	}
+	#gradient-value {
+		font-size: x-large;
+	}
+	.color {
+		width: 100px;
+		height: 100px;
+	}
 }

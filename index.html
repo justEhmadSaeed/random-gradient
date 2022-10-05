@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gradient Background</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-  </head>
-  <body id="gradient">
-	<h1>Background Gradient Generator</h1>
-	<hr/>
-	<br/>
-    <input class="color1" type="color" name="color1" value="#1488CC" />
-    <input class="color2" type="color" name="color2" value="#2B32B2" />
-    <div><button class="button1">Generate Random Gradient</button></div>
-    <h2 class = "heading">Current CSS Background</h2>
-    <div id="gradient-box">
-        <h3 id="gradient-value"></h3>
-        <input
-          id="copy"
-          class="button2"
-          type="image"
-          src="copyIcon.svg"
-          onclick="copyToClipboard()"
-        />
-	</div>
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+	<head>
+		<title>Gradient Background</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/png" href="favicon.png" />
+	</head>
+	<body id="gradient">
+		<h1>Background Gradient Generator</h1>
+		<hr id="line" />
+		<br />
+		<div>
+			<input
+				class="color color1"
+				type="color"
+				name="color1"
+				value="#1488CC"
+			/>
+			<input
+				class="color color2"
+				type="color"
+				name="color2"
+				value="#2B32B2"
+			/>
+		</div>
+		<div>
+			<button class="generate-btn">Generate Random Gradient</button>
+		</div>
+		<h2 class="heading">Current CSS Background</h2>
+		<div id="gradient-box">
+			<h3 id="gradient-value"></h3>
+			<input
+				id="copy"
+				type="image"
+				src="copyIcon.svg"
+				onclick="copyToClipboard()"
+			/>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>
