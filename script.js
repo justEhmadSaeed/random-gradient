@@ -9,6 +9,7 @@ setGradient = () => {
 	random.style.background = _linearGradient();
 	h3.textContent = `${body.style.background}`;
 };
+
 _linearGradient = () => {
 	return (
 		'linear-gradient(to right,' +
@@ -46,6 +47,18 @@ const copyToClipboard = () => {
 	el.select();
 	document.execCommand('copy');
 	document.body.removeChild(el);
-	console.log('Gradient copied');
-	alert('Gradient CSS copied !🙌');
+	showNotification();
 };
+
+const showNotification = () => {
+	const timeInterval = 3000; // 3 seconds
+	const notificationWrapper = document.getElementById('notification');
+
+	notificationWrapper.style.top = "20px";
+	notificationWrapper.style.right = `calc(100vh - ${notificationWrapper.offsetWidth/2}px)`
+
+	// Hide notification after specified time interval
+	setTimeout(()=>{
+	notificationWrapper.style.top = '-70px';
+	}, timeInterval)
+}

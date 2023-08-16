@@ -1,133 +1,169 @@
 body {
-	font-family: 'Raleway', sans-serif;
-	color: rgba(0, 0, 0, 0.5);
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	height: 100vh;
-	margin: 0;
-	background: linear-gradient(to right, #1488cc, #2b32b2);
+  font-family: "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #1488cc, #2b32b2);
 }
+
 #line {
-	width: 100%;
+  width: 100%;
 }
+
 h1 {
-	font: 600 3.5em 'Raleway', sans-serif;
-	color: white;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	padding-top: 2rem;
+  font: 600 3.5em "Raleway", sans-serif;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding-top: 2rem;
 }
+
 .heading {
-	font-size: xx-large;
+  font-size: xx-large;
 }
+
 h3 {
-	font: 900 1em 'Raleway', sans-serif;
-	color: rgba(0, 0, 0, 0.5);
-	text-align: center;
-	text-transform: none;
-	letter-spacing: 0.01em;
+  font: 900 1em "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.01em;
 }
+
 .generate-btn {
-	background: linear-gradient(to right, #1488cc, #2b32b2);
-	color: black;
-	border: 2px solid white;
-	border-radius: 8px;
-	padding: 2rem 4rem;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 3rem;
-	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
-		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(to right, #1488cc, #2b32b2);
+  color: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 2rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3rem;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 .generate-btn:hover {
-	color: white;
-	border: 2px solid #e7e7e7;
-	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
-		0 17px 50px 0 rgba(0, 0, 0, 0.19);
-	cursor: pointer;
+  color: white;
+  border: 2px solid #e7e7e7;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
+
 .generate-btn:active {
-	box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
-		0 19px 55px 0 rgba(0, 0, 0, 0.21);
-	transform: translateY(4px);
-	outline: none;
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
+    0 19px 55px 0 rgba(0, 0, 0, 0.21);
+  transform: translateY(4px);
+  outline: none;
 }
+
 .generate-btn:focus {
-	outline: none;
+  outline: none;
 }
+
 #gradient-box {
-	min-height: 2rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 2rem;
-	margin: 2%;
-	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24);
+  min-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 2%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24);
 }
+
 #gradient-value {
-	display: inline;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-	font-size: xx-large;
-	font-weight: bold;
-	color: black;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
 }
+
 #copy {
-	display: inline;
-	width: 40px;
-	outline: none;
-	padding: 10px;
-	border: none;
-	font-size: xx-large;
-	background: rgba(255, 255, 255, 0.5);
-	border-radius: 8px;
-	display: inline-block;
-	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
-		0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  display: inline;
+  width: 40px;
+  outline: none;
+  padding: 10px;
+  border: none;
+  font-size: xx-large;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 #copy:hover {
-	box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
-		0 17px 50px 0 rgba(0, 0, 0, 0.19);
-	cursor: pointer;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
+
 #copy:active {
-	box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
-		0 19px 55px 0 rgba(0, 0, 0, 0.21);
-	transform: translateY(2px);
-	outline: none;
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.3),
+    0 19px 55px 0 rgba(0, 0, 0, 0.21);
+  transform: translateY(2px);
+  outline: none;
 }
+
 #copy:focus {
-	outline: none;
+  outline: none;
 }
+
 .color {
-	width: 30%;
-	height: 200px;
+  width: 30%;
+  height: 200px;
+}
+
+.notification {
+	background-color: rgba(255, 255, 255, 0.2);
+  	border-radius: 4px;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.24);
+	color: white;
+	position: fixed;
+	text-transform: none;
+	letter-spacing: 0.1em;
+	padding: 10px 15px;
+	top: -70px;
+	transition: top 1s;
+}
+
+.notification i {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	padding: 4px 7px;
+	font-size: large;
+	color: black;
 }
 
 @media only screen and (min-width: 1024px) {
-	body {
-		align-items: center;
-	}
-	.generate-btn {
-		font-size: 2rem;
-	}
-	#gradient-box {
-		width: 70%;
-	}
-	#gradient-value {
-		font-size: x-large;
-	}
-	.color {
-		width: 100px;
-		height: 100px;
-	}
+  body {
+    align-items: center;
+  }
+  .generate-btn {
+    font-size: 2rem;
+  }
+  #gradient-box {
+    width: 70%;
+  }
+  #gradient-value {
+    font-size: x-large;
+  }
+  .color {
+    width: 100px;
+    height: 100px;
+  }
 }
